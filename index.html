@@ -37,13 +37,13 @@
         </div>
     </header>
     
-    <main>
+    <main class="main-main">
 
         <!--герой-->
         <section class="section-hero">
             <div class="conteiner">
                 <h1 class="hero">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="btn">Заказать услугу</button>
+                <button type="button" class="btn" data-modal-open="backdrop">Заказать услугу</button>
             </div>
         </section>
 
@@ -79,12 +79,15 @@
                 <ul class="list flex">
                     <li class="item-what">
                         <img src="./image/img1.jpg" alt="Картинка" width="370">
+                        <p class="what-text">Десктопные приложения</p>
                     </li>
                     <li class="item-what">
                         <img src="./image/img2.jpg" alt="Картинка" width="370">
+                        <p class="what-text">Мобильные приложения</p>
                     </li>
                     <li class="item-what">
                         <img src="./image/img3.jpg" alt="Картинка" width="370">
+                        <p class="what-text">Дизайнерские решения</p>
                     </li>
                 </ul>
             </div>
@@ -351,5 +354,19 @@
             </div>
         </div>
     </footer>
+
+<!-- =======backdrop======== -->
+    <div class="backdrop is-hidden">
+        <div class="modal">
+            <button class="modal-btn">
+                <svg width="11" height="11">
+                    <use href="./image/icon.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+
 </body>
 </html>
