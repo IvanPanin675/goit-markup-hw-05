@@ -633,12 +633,13 @@ img {
     display: flex;
     top: 0;
     left: 0;
-    padding: 0 24px;
-    min-height: 100%;
+    padding: 24px 24px;
+    height: 100%;
     align-items: center;
     transform: translateY(101%);
     transition: transform 250ms ease;
 
+    overflow-y: auto;
     background-color: rgba(33, 150, 243, 0.9);
 
     font-size: 18px;
